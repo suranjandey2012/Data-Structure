@@ -1,50 +1,35 @@
 #include "Stack.h"
-#include "Stack.h"
-int main()
+int  main()
 {
     STACK *s=create_stack(3);
-    s=push(s,1);
-    Display(s);
-    printf("\n");
-    s=push(s,2);
-    Display(s);
-    printf("\n");
-    s=push(s,3);
-    Display(s);
-    printf("\n");
-    s=push(s,4);
-    Display(s);
-    printf("\n");
-    s=push(s,5);
-    Display(s);
-    printf("\n");
-    int data=pop(s);
-    printf("\nPopped:%d\n",data);
-    Display(s);
-    data=pop(s);
-    printf("\nPopped:%d\n",data);
-    Display(s);
-    data=pop(s);
-    printf("\nPopped:%d\n",data);
-    Display(s);
-    data=pop(s);
-    printf("\nPopped:%d\n",data);
-    Display(s);
-    data=pop(s);
-    printf("\nPopped:%d\n",data);
-    Display(s);
-    data=pop(s);
-    printf("\nPopped:%d\n",data);
-    Display(s);
-    data=pop(s);
-    printf("\nPopped:%d\n",data);
-    Display(s);
-    data=pop(s);
-    printf("\nPopped:%d\n",data);
-    Display(s);
-    push(s,2);
-    Display(s);
-    printf("\n");
-    return 0;
+    DATA d;
+    d=87;
+    push(s,&d);
+    d=16;
+    push(s,&d);
+    d=36;
+    push(s,&d);
+    pop(s,&d);
+    pop(s,&d);
+    d=22;
+    push(s,&d);
+    pop(s,&d);
+    d=91;
+    push(s,&d);
+    d=64;
+    push(s,&d);
+    pop(s,&d);
+    pop(s,&d);
+    pop(s,&d);
+    d=69;
+    push(s,&d);
+    d=30;
+    push(s,&d);
+    d=90;
+    push(s,&d);
+    d=92;
+    push(s,&d);
+    clearstack(s);
+    return 0; 
 }
 
